@@ -1,5 +1,6 @@
 ﻿Option Strict On
 Option Explicit On
+Option Compare Text
 
 'Lane Coleman
 'RCET0265
@@ -10,15 +11,32 @@ Module SayMyNameAgain
 
     Sub Main()
         Dim userInput As String
+
         Console.WriteLine("What is your name?")
         userInput = Console.ReadLine()
-        If userInput = "Emily" Then Console.WriteLine("Hi Emily.")
-        If userInput = "Joe" Then Console.WriteLine("Hi Joe.")
-        If userInput = "Lane" Then Console.WriteLine("Bruh")
-        If userInput = "Tim" Then Console.WriteLine("Rossiter?  The man, the myth, the legend?")
+
+
+        If userInput = "Emily" Then
+            Console.WriteLine("Hi Emily.")
+
+        ElseIf userInput = "Joe" Then
+            Console.WriteLine("Hi Joe.")
+
+        ElseIf userInput = "Lane" Then
+            Console.WriteLine("Bruh")
+
+        ElseIf userInput = "Tim" Then
+            Console.WriteLine("Rossiter?  Uh oh... uhm, I gotta go")
+        ElseIf _
+            userInput <> "Emily" And
+            userInput <> "Joe" And
+            userInput <> "Lane" And
+            userInput <> "Tim" Then
+            Console.WriteLine("Go away")
+
+        End If
+
         Console.ReadLine()
 
-
     End Sub
-
 End Module
