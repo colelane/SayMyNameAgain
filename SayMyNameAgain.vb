@@ -15,12 +15,12 @@ Module SayMyNameAgain
         Console.WriteLine("What is your name?")
         userInput = Console.ReadLine()
 
-
+        'individual reactions for specific names
         If userInput = "Emily" Then
             Console.WriteLine("Hi Emily.")
 
         ElseIf userInput = "Joe" Then
-            Console.WriteLine("Hi Joe.")
+            Console.WriteLine("Joe mama.")
 
         ElseIf userInput = "Lane" Then
             Console.WriteLine("Bruh")
