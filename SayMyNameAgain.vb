@@ -4,7 +4,7 @@ Option Compare Text
 
 'Lane Coleman
 'RCET0265
-'Spring 2020
+'Fall 2020
 'Say My Name Again
 'https://github.com/colelane/SayMyNameAgain.git
 Module SayMyNameAgain
